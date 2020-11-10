@@ -1,0 +1,19 @@
+server:
+  port: 8081
+management:
+  endpoints:
+    web:
+      base-path: /
+  endpoint:
+    health:
+      show-components: never
+      show-details: always
+      group:
+        live:
+          show-components: never
+          show-details: always
+          include: ping
+        ready:
+          show-components: never
+          show-details: always
+          include: ping
